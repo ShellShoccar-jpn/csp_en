@@ -1,8 +1,8 @@
 # "pax" command
 
-This command is born to integrate two major archivers "tar" and "cpio." It appeared in the POSIX specification 1998 edition. Note that *"tar" and "cpio" have been removed* from the document in place of "pax."[1]
+This command is born to integrate two major archivers "tar" and "cpio." It appeared in the POSIX specification 1998 edition. Note that **"tar" and "cpio" have been removed** from the document in place of "pax."[1]
 
-Thus, strictly speaking, you should use the "pax" command for archiving. Of course, it supports both the archive format even though it has yet another format "ustar." And, the recent versions of tar know the ustar format.
+Thus, strictly speaking, you should use the "pax" command for archiving. Of course, it supports both the archive format even though it has yet another format "ustar." And, the recent versions of tar also know the ustar format.
 
 ## But Not So Popular
 
