@@ -15,7 +15,7 @@ Unfortunately, the original "date" doesn't support the mutual transformation bet
 
 What time in UNIX time is for 2015-08-16 10:00:00 JST?
 
-```
+``` sh
 $ export TZ=JST-9
 $ echo 20150816100000 | utconv
 1439686800
@@ -24,7 +24,7 @@ $
 
 And, can the command invert the UNIX time to the original one correctly?
 
-```
+``` sh
 $ export TZ=JST-9 # <- Unnecessary if already typed
 $ echo 1439686800 | utconv -r
 20150816100000
