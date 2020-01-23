@@ -19,4 +19,4 @@ fi
 This example seems that pax argument is more complicated than tar's one. That is to keep compatible with the default behavior of tar command. In the case the path of the archive file starts from "/," it means an absolute-path, tar tries removing it while pax doesn't. The "-s" option is to make pax do the same behavior as tar.
 
 ---
-1. The name "pax" has two meanings. One is "packs." It's the third-person singular present conjugation for "pack." The other is "peace." in Latin. There is a wish in this name to finish the power struggle between tar and cpio.
+1. The name "pax" has two meanings. One is "packs." It's the third-person singular present conjugation for "pack." The other is "peace" in Latin. There is a wish in this name to finish the power struggle between tar and cpio.
