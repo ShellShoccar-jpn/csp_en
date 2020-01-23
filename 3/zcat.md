@@ -1,4 +1,4 @@
-# "zcat" command
+# "zcat" Command
 
 Even though most actual "zcat" implementations on various Unix could work equivalently as "`gunzip | cat`," that is a misunderstanding to speak strictly. The behavior of "zcat" is equivalent to "`uncompress | cat`." Some zcat fails to work like that:
 

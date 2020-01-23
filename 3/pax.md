@@ -1,4 +1,4 @@
-# "pax" command
+# "pax" Command
 
 This command is born to integrate two major archivers "tar" and "cpio." It appeared in the POSIX specification 1998 edition. Note that **"tar" and "cpio" have been removed** from the document in place of "pax."[1]
 

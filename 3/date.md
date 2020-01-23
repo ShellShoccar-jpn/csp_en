@@ -1,4 +1,4 @@
-# "date" command
+# "date" Command
 
 This is one of the commands which has a lot of vendor-unique functions because the original "date" doesn't have enough features. But, you may use only the following functions if you care about compatibility.
 
