@@ -31,3 +31,7 @@ The other idea is not to use the hyphen "-" as range operator. You can also repl
 > `tr -d 'abcdefghijklmnopqrstuvwxyz'`
 
 This is the perfect substitute for "`tr -d 'a-z'`" and/or "`tr -d '[a-z]'`," although it looks a little longer.
+
+
+---
+* Although Solaris 11 is one of the traditional System-V family OSes, it already has not only System-V traditional commands but also POSIX compliant ones. "tr" command is, too.
