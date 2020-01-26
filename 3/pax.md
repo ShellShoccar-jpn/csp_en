@@ -8,7 +8,7 @@ Thus, strictly speaking, you should use the "pax" command for archiving. Of cour
 
 However, it's not confident to say that "pax" is popular. Some Linux distributions like "Debian," "Ubuntu," and so on don't install it on initial status. So, you should make sure that there is pax or tar on your computer and choose one of them with a shellscript like this:
 
-### Dealing with tar archive with the care of compatibility
+### Dealing with Tar Archive with the Care of Compatibility
 
 ``` sh
 if   type pax >/dev/null 2>&1; then pax -rs '!^/!./!' -f SOME_ARCHIVE.tar
