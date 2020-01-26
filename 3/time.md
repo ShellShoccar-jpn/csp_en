@@ -2,7 +2,7 @@
 
 This is a command to time command from start to end. However, the reporting format varies depending on vendors. POSIX defines the format clearly when you use it with the "-p" option and when C-locale. It's expressed with like the "printf" function as follows.
 
-> "real %f\nuser %f\nsys %f\n", <real seconds>, <user seconds>, <system seconds>
+> `"real %f\nuser %f\nsys %f\n", <real seconds>, <user seconds>, <system seconds>`
 
 But unfortunately, some implementations, which don't follow the latest POSIX yet, don't support the option. I certainly made sure that the built-in one of /bin/sh on IBM AIX 7.2 doesn't.
 

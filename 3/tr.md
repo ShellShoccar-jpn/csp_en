@@ -7,6 +7,7 @@ This is also one of the commands in which dialect between BSD and System-V remai
 When you replace each capital letter to the small one in the whole of text data, you have to choose one of the following usages depending on whether it's for BSD edition or System-V edition.
 
 > `tr '[A-Z]' '[a-z]'`  <== for System-V (works correctly by chance)
+
 > `tr 'A-Z' 'a-z'`      <== for BSD and POSIX
 
 The difference between the two is whether the brackets "[,]" is necessary or not. On BSD and POSIX, the brackets have no special meaning and also regarded as usual ones. So, if you use the System-V usage on BSD, the brackets on text data will be able to be transformed into anything unintentionally.  However, the former case, which has two pairs of brackets arguments, works with no problem because brackets transform into the same each by chance. Thus, it would be best if you use the former even on BSD rather than the latter.
@@ -16,6 +17,7 @@ The difference between the two is whether the brackets "[,]" is necessary or not
 However, the above trick is useless for the case that the "tr" command has only one pair of Brackets Argument, like when using the "-d" option. Here is an example.
 
 > `tr -d '[a-z]'`  <== for System-V (doesn't work on BSD, POSIX)
+
 > `tr -d 'a-z'`    <== for BSD (doesn't work on System-V)
 
 You might think that the former (System-V usage) is not proper because it doesn't comply with POSIX. It's certainly correct, but there are some ideas to support it. One of them is to replace it with the "sed" command. The above example can be replaced as follows in most cases.
