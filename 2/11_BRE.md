@@ -36,7 +36,7 @@ As I explained in the above, available metacharacters in square brackets are qui
 | Meta-chr.         | Meaning                                     |
 | :---              | :---                                        |
 | `^`               | Complementary Operator: If you locate it just behind the opening bracket (earlier than the following two operators if they exist), the bracketed phrase matches with any of the complementary characters which enumerated in it. For instance, the pattern string "`[^ABC]`" matches with "0," "1," "@," "D," "a," and so on, except "A" to "C." |
-| *a*`-`*b*         | Range Operator: It's equivalent to all the letters from *a* to *z* in character code order. For instance, "`[0-9]`" means "`[0123456789]`," and "`[^ -%]`" means "`[^ !"#$%]`." When you want to mean the hyphen itself, you should locate it just before the closing bracket. If you want to write both the hyphen and the opening bracket without special meanings, write the hyphen later like this: "`[`...`[-]`"  |
+| *a*`-`*b*         | Range Operator: It's equivalent to all the letters from *a* to *z* in character code order. For instance, "`[0-9]`" means "`[0123456789]`," and "`[^ -%]`" means "`[^ !"#$%]`." If you want to mean the hyphen itself, you should locate it just before the closing bracket. |
 | `]`               | If you want to use it without the special meaning, you have to locate it just behind the opening bracket. However, the simple circumflex is earlier if it exists. |
 
 Moreover, the following metacharacters are also available in brackets, but some RE libraries misinterpret them due to some bugs even though POSIX defines them. So, it couldn't recommend using them.
