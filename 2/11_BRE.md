@@ -11,7 +11,7 @@ I will show you one by one.
 
 ## Matching metacharacters
 
-The following table shows the metacharacters you can use for pattern matching. Note that most of them lose their special meanings when they are inside brackets. So, I'll explain the metacharacters which are available inside brackets in the next section.
+The following table shows the metacharacters you can use for pattern matching. Note that most of them lose their special meanings when they are inside brackets (square brackets). So, I'll explain the metacharacters which are available inside brackets in the next section.
 
 | Meta-chr.         | Meaning                                     |
 | :---              | :---                                        |
@@ -31,7 +31,7 @@ The following table shows the metacharacters you can use for pattern matching. N
 
 ## Matching Metacharacters Inside Brackets
 
-As I explained in the above, available metacharacters in brackets are quite different from outside ones.
+As I explained in the above, available metacharacters in square brackets are quite different from outside ones.
 
 | Meta-chr.         | Meaning                                     |
 | :---              | :---                                        |
@@ -43,9 +43,9 @@ Moreover, the following metacharacters are also available in brackets, but some 
 
 | Meta-chr.         | Meaning                                     |
 | :---              | :---                                        |
-| `[:`*keyword*`:]` | POSIX Character Class: The part "*keyword*" is one of the following twelve keywords. **1:"alnum"** means all alphabets and digits. **2:"alpha"** means all alphabets. **3:"blank"** means the space and the tab. **4:"cntrl"** means all control characters. **5:"digit"** means all digits. **6:"graph"** means all visible characters (alphabets, digits and symbols except the space or the tab). **7:"lower"** means all small alphabets. **8:"print"** means all printable characters ("graph"+"blank"). **9:"punct"** means all punctuation characters (symbols except the space or the tab). **10:"space"** means all whitespace characters (SPC,HT,VT,CR,LF,FF). **11:"upper"** means all capital aphabets. **12:"xdigit"** means all hexadecimal digits (`[0-9A-Fa-f]`). |
+| `[:`*keyword*`:]` | POSIX Character Class: The part "*keyword*" is one of the following twelve keywords. **1:"alnum"** means all alphabets and digits. **2:"alpha"** means all alphabets. **3:"blank"** means the space and the tab. **4:"cntrl"** means all control characters. **5:"digit"** means all digits. **6:"graph"** means all visible characters (alphabets, digits and symbols except the space or the tab). **7:"lower"** means all small alphabets. **8:"print"** means all printable characters ("graph"+"blank"). **9:"punct"** means all punctuation characters (symbols except the space or the tab). **10:"space"** means all whitespace characters (SPC,HT,VT,CR,LF,FF). **11:"upper"** means all capital aphabets. **12:"xdigit"** means all hexadecimal digits (`[0-9A-Fa-f]`). When you use them actually, you can write it like "`[[:upper:][:digit:]]`." However, some environments accept "`[:`*keyword*`:]" instead of "`[[:`*keyword*`:]]" by mistake. |
 | `[.`*string*`.]`  | For instance, "`[[.foo.]]`" is equivalent to "`\(foo\)\{1,\}`." However, **I have never seen any environments available.** Is that because the latter way would be sufficient? |
-| `[=`*chr*`=]`     | For instance, "`[[=a=]]`" is equivalent to "`[aàâ]`." So, "`[[=a=]bc]`" also means "`[aàâbc]`." However, I never have seen it, neither! |
+| `[=`*chr*`=]`     | For instance, "`[[=a=]]`" is equivalent to "`[aàâ]`." So, "`[[=a=]bc]`" also means "`[aàâbc]`." However, I have never seen it, neither! |
 
 
 ## Replacing metacharacters
