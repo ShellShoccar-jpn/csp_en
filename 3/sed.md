@@ -58,7 +58,7 @@ awk 'BEGIN{
 
 ## Available Metacharacters in Regular Expression
 
-Be careful about the available metacharacters written on the GNU sed man page because it contains some uniquely additional ones. For sed command, the metacharacter set you should comply with is the Basic Regular Expression (BRE). It's written in [POSIX sed man page](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/sed.html). See also [BRE section](../2/bre.md).
+Be careful about the available metacharacters written on the GNU sed man page because it contains some uniquely additional ones. For sed command, the metacharacter set you should comply with is the Basic Regular Expression (BRE). It's written in [POSIX sed man page](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/sed.html). See also [BRE section](../2/11_BRE.md).
 
 ## "-" Does Not Always Mean the STDIN Symbol
 
