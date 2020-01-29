@@ -64,4 +64,4 @@ See the [BRE's](11_BRE.md##Matching-Metacharacters-Inside-Brackets) explanation.
 
 
 ---
-* Solaris 11 also has the POSIX complant grep command, but it doesn't support it.
+* Solaris 11 also has the POSIX compliant grep command, but it doesn't support it.
