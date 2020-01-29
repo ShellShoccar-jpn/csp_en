@@ -19,15 +19,16 @@ The following table shows the metacharacters you can use for pattern matching. N
 | `$`               | Matches with the empty string behind the tail of the line. Thus, you can use it when you want to insert some string behind the tail. However, the particular meaning affects only when it is at the tail of the matching pattern string. Otherwise, it'll behave like a usual letter. |
 | `[`...`]`         | Matches with a letter if it's one of the enumerated in the bracket. |
 | `[^`...`]`        | Matches with a letter if it's none of the enumerated in the bracket. (See the [next section](#Matching-Metacharacters-Inside-Brackets)) |
-| `*`               | Quantifier: Matches with zero or more repetitions maximally with which the previous character or phrase at the quantifier specifies. |
-| `\{`*n*`\}`       | Quantifier: Matches with *n* repetitions with which the previous character or phrase at the quantifier specifies (*n*>=1). |
-| `\{`*n*`,\}`      | Quantifier: Matches with *n* or more repetitions maximally with which the previous character or phrase at the quantifier specifies (*n*>=0). |
-| `\{`*m*`,`*n*`\}` | Quantifier: Matches with *m* or more and *n* or fewer repetitions maximally with which the previous character or phrase at the quantifier specifies (*m*>=0, *n*>=*m*). |
+| `*`               | Quantifier: Matches with zero or more repetitions maximally with which the previous character or phrase at the quantifier specifies. The earlier quantifiers are stronger than laters about the intention of maximization. |
+| `\{`*n*`\}`       | Quantifier: Matches with *n* repetitions with which the previous character or phrase at the quantifier specifies (*n*>=1). The earlier quantifiers are stronger than laters about the intention of maximization. |
+| `\{`*n*`,\}`      | Quantifier: Matches with *n* or more repetitions maximally with which the previous character or phrase at the quantifier specifies (*n*>=0). The earlier quantifiers are stronger than laters about the intention of maximization. |
+| `\{`*m*`,`*n*`\}` | Quantifier: Matches with *m* or more and *n* or fewer repetitions maximally with which the previous character or phrase at the quantifier specifies (*m*>=0, *n*>=*m*). The earlier quantifiers are stronger than laters about the intention of maximization. |
 | `\(`...`\)`       | Inclusion Operator: The parentheses make a phrase of the string between them. The above quantifiers or the backward reference operator, which explained later, refers it. For instance, in case that the target string is "ABC123ABCABC", and the matching pattern is "`\([A-Z]*\)123\1*`." Then, "`\1`" matches the second "ABC." That is the following emphasized part, "ABC123**ABC**ABC." |
 | `\`*n*            | Backward Reference Operator: Behaves as the string equivalent to the string between the *n*th parentheses (*n*>=1). |
 | `\`*x*            | If *x* is one of the metacharacters, the backslash in front of it disables the special meaning. So you can use *x* as the ordinal one. |
 | `\\`              | Means `\` itself. |
 
+Note: GNU's BRE supports three more metacharacters; "`\?`." "`\|`" and  "`\+`." However, they aren't compliant ones with POSIX.
 
 ## Matching Metacharacters Inside Brackets
 
