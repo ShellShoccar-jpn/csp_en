@@ -61,3 +61,7 @@ Here are the additional ones. It is also the same as BRE's.
 It is also the same as BRE's, but there is no command which can support replacing with ERE in POSIX.
 
 See the [BRE's](11_BRE.md##Matching-Metacharacters-Inside-Brackets) explanation.
+
+
+---
+* Solaris 11 also has the POSIX complant grep command, but it doesn't support it.
