@@ -1,23 +1,18 @@
-# ERE Metacharacter Set
+# AWK's Subset of ERE Metacharacters
 
-ERE looks upper compatible with BRE, and the literal meaning is also "Extended"-RE. However, **ERE is not compatible with BRE.** Be careful.
+The AWK's subset supports most of ERE metacharacters except the brace quantifier "`{`...`}`." Although the 2008 Edition of POSIX recommends that every POSIX-compliant OSes should support it, most of them don't yet.
+
+Moreover, the script parser in AWK command pre-processes the backslashed character "`\`*x*" before executing the script. Thus, the RE metacharacters in AWK are also affected. So, the available metacharacters are the following, eventually.
 
 ERE mainly has the following differences from BRE;
 
-* Supports fewer metacharacters; "`+`," "`?`" and  "`|`."
-* The braces (quantifier) and parentheses (inclusion-operator) are no longer with the backslash. Thus, the meanings have switched between "`\(`...`\)`," "`\{`...`\}`" and "`(`...`)`," "`{`...`}`."
-* **The backward reference operator is not supported officially.**[1]
-
-As same as BRE section, I'll place the metacharacters into three subsets.
+As same as the former sections, I'll place the metacharacters into three subsets.
 
 * Matching metacharacters (outside brackets)
 * Matching metacharacters inside brackets
 * Replacing metacharacters
 
-
 ## Matching metacharacters
-
-Here is the first subset for ERE.
 
 | Meta-chr.       | Meaning                                     |
 | :---            | :---                                        |
@@ -27,27 +22,45 @@ Here is the first subset for ERE.
 | `[^`...`]`      | Matches with a letter if it's none of the enumerated in the bracket. (See the [next section](#Matching-Metacharacters-Inside-Brackets)) |
 | `*`             | Quantifier: Matches with zero or more repetitions maximally with which the previous character or phrase at the quantifier specifies. The earlier quantifiers are stronger than laters about the intention of maximization. |
 | `+`             | Quantifier: Matches with one or more repetitions maximally with which the previous character or phrase at the quantifier specifies. The earlier quantifiers are stronger than laters about the intention of maximization. |
-| `{`*n*`}`       | Quantifier: Matches with *n* repetitions with which the previous character or phrase at the quantifier specifies (*n*>=1). The earlier quantifiers are stronger than laters about the intention of maximization. |
-| `{`*n*`,}`      | Quantifier: Matches with *n* or more repetitions maximally with which the previous character or phrase at the quantifier specifies (*n*>=0). The earlier quantifiers are stronger than laters about the intention of maximization. |
-| `{`*m*`,`*n*`}` | Quantifier: Matches with *m* or more and *n* or fewer repetitions maximally with which the previous character or phrase at the quantifier specifies (*m*>=0, *n*>=*m*). The earlier quantifiers are stronger than laters about the intention of maximization. |
 | `?`             | Quantifier: Matches with zeno or one repetitions maximally with which the previous character or phrase at the quantifier specifies. The earlier quantifiers are stronger than laters about the intention of maximization. |
 | *A*`\|`*B*      | "OR" Operator: It regards *A* and *B* as matching pattern strings, respectively. Then, it matches with *A* or *B*. The target scopes of the operator are generally to the head or tail of the pattern string, or, to the parentheses if they exist. For instance, "`^ABC\|DEF$`" means not "`^(ABC\|DEF)$`" but "`(^ABC)\|(DEF$)`." *Additionally, there is a tip about which you have to be careful.* (See the [following section](21_note.md)) |
 | `(`...`)`       | Inclusion Operator: The parentheses make a phrase of the string between them. The above quantifiers or the "OR" operator refers it. |
-| `\`*x*          | If *x* is one of the metacharacters, the backslash in front of it disables the special meaning. So you can use *x* as the ordinal one. |
-| `\\`            | Means `\` itself. |
+| `\\`            | Means `\` itself without the special meaning. |
+| `\/`            | Means `/` itself without the special meaning. |
+| `\"`            | Means `"` itself without the special meaning. |
+| `\a`            | Means the control code "BEL" (0x07). |
+| `\b`            | Means the control code "BS" (0x08). |
+| `\f`            | Means the control code "FF" (0x0C). |
+| `\n`            | Means the control code "LF" (0x0A). |
+| `\r`            | Means the control code "CR" (0x0D). |
+| `\t`            | Means the control code "HT" as known as "TAB" (0x09). |
+| `\v`            | Means the control code "VT" (0x0B). |
+| `\`*ddd*        | Means the letter of which character code is *ddd* in octal three digits, without the special meaning. For instance, "`\057`" means "`/`." |
+| `\`*x*          | If *x* is one of the metacharacters, the backslash in front of it disables the special meaning. So you can use *x* as the ordinal one. If *x* is none of the letters in the above, it means undefinedly. |
 
 
 ## Matching Metacharacters Inside Brackets
 
-It is completely the same as [BRE's](11_BRE.md#matching-metacharacters-inside-brackets).
+"`\\`" and the latter are available due to the AWK script pre-processor.
 
 | Meta-chr.         | Meaning                                     |
 | :---              | :---                                        |
 | `^`               | Complementary Operator: If you locate it just behind the opening bracket (earlier than the following two operators if they exist), the bracketed phrase matches with any of the complementary characters which enumerated in it. For instance, the pattern string "`[^ABC]`" matches with "0," "1," "@," "D," "a," and so on, except "A" to "C." |
 | *a*`-`*b*         | Range Operator: It's equivalent to all the letters from *a* to *z* in character code order. For instance, "`[0-9]`" means "`[0123456789]`," and "`[^ -%]`" means "`[^ !"#$%]`." If you want to mean the hyphen itself, you should locate it just before the closing bracket. |
 | `]`               | If you want to use it without the special meaning, you have to locate it just behind the opening bracket. However, the simple circumflex is earlier if it exists. |
+| `\\`              | Means `\` itself without the special meaning. |
+| `\/`              | Means `/` itself without the special meaning. |
+| `\"`              | Means `"` itself without the special meaning. |
+| `\a`              | Means the control code "BEL" (0x07). |
+| `\b`              | Means the control code "BS" (0x08). |
+| `\f`              | Means the control code "FF" (0x0C). |
+| `\n`              | Means the control code "LF" (0x0A). |
+| `\r`              | Means the control code "CR" (0x0D). |
+| `\t`              | Means the control code "HT" as known as "TAB" (0x09). |
+| `\v`              | Means the control code "VT" (0x0B). |
+| `\`*ddd*          | Means the letter of which character code is *ddd* in octal three digits, without the special meaning. For instance, "`\057`" means "`/`." |
 
-Here are the additional ones. It is also the same as BRE's.
+The additional ones are the same as ERE's.
 
 | Meta-chr.         | Meaning                                     |
 | :---              | :---                                        |
@@ -58,10 +71,24 @@ Here are the additional ones. It is also the same as BRE's.
 
 ## Replacing metacharacters
 
-It is also the same as BRE's, but there is no command which can support replacing with ERE in POSIX.
+About AWK's replacing metacharacters, note the following two issues.
 
-See the [BRE's](11_BRE.md#replacing-metacharacters) explanation or the [AWK's subset section](13_AWK_subset.md#replacing-metacharacters).
+First, "`\`*n*" is unavailable even though BRE has it. Second, you have to write the simple ampersand "`&`", not having the special meaning, as "`\\&`" instead of "`\&`." That is because the AWK script pre-processor converts "`\\`" to "`\`" in advance.
 
+Eventually, the available ones are these:
 
----
-* Solaris 11 also has the POSIX compliant grep command, but it doesn't support it.
+| Meta-chr.         | Meaning                                     |
+| :---              | :---                                        |
+| `&`               | Replaced with the whole part of the string which is matched by the matching pattern. |
+| `\\&`             | Means `&` itself. |
+| `\\`              | Means `\` itself. |
+| `\/`              | Means `/` itself without the special meaning. |
+| `\"`              | Means `"` itself without the special meaning. |
+| `\a`              | Means the control code "BEL" (0x07). |
+| `\b`              | Means the control code "BS" (0x08). |
+| `\f`              | Means the control code "FF" (0x0C). |
+| `\n`              | Means the control code "LF" (0x0A). |
+| `\r`              | Means the control code "CR" (0x0D). |
+| `\t`              | Means the control code "HT" as known as "TAB" (0x09). |
+| `\v`              | Means the control code "VT" (0x0B). |
+| `\`*ddd*          | Means the letter of which character code is *ddd* in octal three digits, without the special meaning. For instance, "`\057`" means "`/`." |

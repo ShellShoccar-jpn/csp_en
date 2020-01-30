@@ -1,4 +1,4 @@
-# BRE metacharacter set
+# BRE Metacharacter Set
 
 In this book, I place a metacharacter set into three subsets, respectively.
 
