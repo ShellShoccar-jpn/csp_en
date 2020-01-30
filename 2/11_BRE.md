@@ -57,4 +57,5 @@ In this context, "Replacing metacharacters" means the string, which is the B par
 | :---              | :---                                        |
 | `\`*n*            | Replaced with the string between the *n*th parentheses (*n*>=1). |
 | `&`               | Replaced with the whole part of the string which is matched by the matching pattern. |
+| `\&`              | Means `&` itself. |
 | `\\`              | Means `\` itself. |
