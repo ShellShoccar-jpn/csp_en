@@ -6,7 +6,7 @@ To close, I told you some points to note when using the metacharacters.
 
 Some implementations don't accept the OR operator "`|`" which locates at the head/tail of the phrase, or also of the whole pattern string.
 
-For instance, when you want to match words which mean a kind of weight, like "*n*kg," "*n*g," "*n*mg," and also "*n*" (no unit), you might write a pattern like "`[0-9]+(kg|g|mg|)`." However, such the pattern could fail.
+For instance, when you want to match words which mean a kind of weight, like "*n*kg," "*n*g," "*n*mg," and also the simple "*n*" (without unit), you might write a pattern like "`[0-9]+(kg|g|mg|)`." However, such a pattern could fail.
 
 ```sh
 (This happens on some versions of macOS and OpenBSD.)
