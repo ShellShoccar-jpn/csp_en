@@ -20,7 +20,7 @@ I confirmed this symptom presents on macOS 10.16 and OpenBSD 6.0, at least. It s
 
 ### Solution
 
-Try the empty parentheses "`()`." as a dummy phrase to give phrases to both sides of the operator, like this:
+Try the empty parentheses "`()`" as a dummy phrase to give phrases to both sides of the operator, like this:
 
 ```sh
 $ echo 2kg | grep -E '[0-9]+(kg|g|mg|())'
@@ -30,4 +30,4 @@ $
 
 ---
 
-* The sed command on these OSes is extended and has ERE mode, which is turned on by the "-r" option.
+* The sed command on these OSes is extended and has ERE mode, which is turned on with the "-r" option.
