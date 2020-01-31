@@ -12,7 +12,7 @@ As same as the former sections, I'll place the metacharacters into three subsets
 * Matching metacharacters inside brackets
 * Replacing metacharacters
 
-## Matching metacharacters
+## Matching Metacharacters
 
 | Meta-chr.       | Meaning                                     |
 | :---            | :---                                        |
@@ -69,7 +69,7 @@ The additional ones are the same as ERE's.
 | `[=`*chr*`=]`     | For instance, "`[[=a=]]`" is equivalent to "`[aàâ]`." So, "`[[=a=]bc]`" also means "`[aàâbc]`." However, I have never seen it, neither! |
 
 
-## Replacing metacharacters
+## Replacing Metacharacters
 
 About AWK's replacing metacharacters, note the following two issues.
 

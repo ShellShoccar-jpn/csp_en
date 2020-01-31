@@ -9,7 +9,7 @@ In this book, I place a metacharacter set into three subsets, respectively.
 I will show you one by one.
 
 
-## Matching metacharacters
+## Matching Metacharacters
 
 The following table shows the metacharacters you can use for pattern matching. Note that most of them lose their special meanings when they are inside brackets (square brackets). So, I'll explain the metacharacters which are available inside brackets in the next section.
 
@@ -49,7 +49,7 @@ Moreover, the following metacharacters are also available in brackets, but some 
 | `[=`*chr*`=]`     | For instance, "`[[=a=]]`" is equivalent to "`[aàâ]`." So, "`[[=a=]bc]`" also means "`[aàâbc]`." However, I have never seen it, neither! |
 
 
-## Replacing metacharacters
+## Replacing Metacharacters
 
 In this context, "Replacing metacharacters" means the string, which is the B part like "s/A/B/," which is in the "sed" command. I'll explain these the following table.
 

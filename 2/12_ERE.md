@@ -15,7 +15,7 @@ As same as BRE section, I'll place the metacharacters into three subsets.
 * Replacing metacharacters
 
 
-## Matching metacharacters
+## Matching Metacharacters
 
 Here is the first subset for ERE.
 
@@ -56,7 +56,7 @@ Here are the additional ones. It is also the same as BRE's.
 | `[=`*chr*`=]`     | For instance, "`[[=a=]]`" is equivalent to "`[aàâ]`." So, "`[[=a=]bc]`" also means "`[aàâbc]`." However, I have never seen it, neither! |
 
 
-## Replacing metacharacters
+## Replacing Metacharacters
 
 It is also the same as BRE's, but there is no command which can support replacing with ERE in POSIX.
 
