@@ -1,6 +1,6 @@
 # Chapter 2. The Compatible Regular Expression
 
-Have you ever have such an experience like that?
+Have you ever had such an experience like that?
 
 > You wrote a regular expression pattern string, and it worked on an OS or a command successfully. However, the string didn't work on another OS or command when you exported the shellscript, which contained the string. After all, you got confused by not knowing available metacharacters well.
 
