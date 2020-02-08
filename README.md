@@ -13,9 +13,9 @@ Many programmers regard that shellscript is a single-use script language because
 
 ## POSIX Fundamentalism
 
-Well, what should we do to make shellscript more compatible and sustainable? What you have to do at first is to look over and comply [the POSIX specification](https://pubs.opengroup.org/onlinepubs/9699919799/). It is the first and the essential rule of "POSIX Fundamentalism," which we named and proposed. It is the manner to make your program more compatible and sustainable, and it contains the following three rules.
+Well, what should we do to make shellscript more compatible and sustainable? What you have to do at first is to look over and comply with [the POSIX specification](https://pubs.opengroup.org/onlinepubs/9699919799/). It is the first and the essential rule of "POSIX Fundamentalism," which we named and proposed. It is the manner to make your program more compatible and sustainable, and it contains the following three rules.
 
-1. Look over and comply [the POSIX specification](https://pubs.opengroup.org/onlinepubs/9699919799/)
+1. Look over and comply with [the POSIX specification](https://pubs.opengroup.org/onlinepubs/9699919799/)
 1. Only when the POSIX commands are not enough to solve your task, make two or more equivalent and redundant routines with non-POSIX commands. It helps your shellscript keep compatible and sustainable.
 1. If you want to build web application programs, use JavaScript on web browsers while complying with [the W3C recommendation](https://www.w3.org/TR/), but don't use JavaScript libraries, which is unknown whether it meets the recommendation or not. [The W3C recommendation](https://www.w3.org/TR/) is also compatible and sustainable among web browsers, as well as the POSIX specifications.
 
@@ -25,7 +25,7 @@ In this book, I'll mainly tell you a lot of helpful tips to achieve the first ru
 
 I understand about POSIX as follows;
 
-The original UNIX, born in the 1960s, was used by a lot of vendors and organizations for making their versions. Then, a lot of Unix-like OSes were born. And, they have various unique functions, which are incompatible even though these command names are often the same. As a result, the Unix OS family has gotten many dialects and had been going more incompatible around 1990. To resolve the problem, Richard Stallman founded the Free Software Foundation, proposed to the IEEE a specification which extracts almost only typical interface specifications from the Unix OSes. That is the origin of the POSIX.
+The original UNIX, born in the 1960s, was used by a lot of vendors and organizations for making their versions. Then, a lot of Unix-like OSes were born. And, they have various unique functions, which are incompatible even though these command names are often the same. As a result, the Unix OS family has gotten many dialects and had been going more incompatible around 1990. To resolve the problem, Richard Stallman, the founder of the Free Software Foundation, proposed to the IEEE a specification which extracts almost only typical interface specifications from the Unix OSes. That is the origin of the POSIX.
 
 The POSIX (IEEE Std. 1003) specification is the guideline of the Unix interface for all OSes categorizing themselves as "Unix" should comply. In other words, the OSes can reply to the expectation by many users who would like to use a Unix OS if the OSes only have to comply with the guideline. Moreover, the guideline isn't revised frequently like the major languages or middleware, or rather it probably can't be revised drastically because so many vendors already comply with the guideline, and the incompatible updating would make them confused. Therefore, POSIX became a very compatible and sustainable specification.
 
@@ -50,16 +50,16 @@ You can also see such elementary information on the web. If you are bothered or 
   * [UNIX / LINUX Tutorial](https://www.tutorialspoint.com/unix/)
     * [Shell Scripting Tutorial](https://www.tutorialspoint.com/unix/shell_scripting.htm)
   * [Linux/Unix Tutorial for Beginners: Learn Online in 7 days](https://www.guru99.com/unix-linux-tutorial.html)
-    * Every page has a video, recomened one!
+    * Every page has a video, recommened one!
 * POSIX Specification Pages ([see the below](#posix-specification-pages))
   * [The Open Group Base Specifications Issue 7, 2018 edition IEEE Std 1003.1](https://pubs.opengroup.org/onlinepubs/9699919799/)
 * Online Man-pages for Unix OSes ([see the below](#online-man-pages-for-Unix-oses))
   * [FreeBSD Manual Pages](https://www.freebsd.org/cgi/man.cgi)
-    * Also available, other BSDs, some commercial Unix familes, some Linux distros.
+    * Also available, other BSDs, some commercial Unix families, some Linux distros.
   * [The Linux man-pages project](https://www.kernel.org/doc/man-pages/)
-  * [Commanfs - IBM AIX 7.2](https://www.ibm.com/support/knowledgecenter/en/ssw_aix_72/navigation/commands.html)
+  * [Commands - IBM AIX 7.2](https://www.ibm.com/support/knowledgecenter/en/ssw_aix_72/navigation/commands.html)
   * [Oracle Solaris 11.4 Reference Manuals](https://docs.oracle.com/cd/E88353_01/)
-* AWK Programming Fudamentals -- AWK plays a role as a powerful sub-language of shellscript
+* AWK Programming Fundamentals -- AWK plays a role as a powerful sub-language of shellscript
   * [Gawk: Effective AWK Programming](https://www.gnu.org/software/gawk/manual/)
     * This document tells the difference between POSIX AWK and GNU AWK, very kind.
 * Script Debuggers (Lint)
@@ -86,4 +86,4 @@ However, you may feel the explanations in the POSIX site is a little difficult t
 
 ## Disclaimer
 
-This document is not complete. It perhaps contain some mistakes and insufficient. If you notice such points, please give me your advice or send me your pull request. It is welcome! Let's make the useful knowledge together!
+This document is not complete. It perhaps contains some mistakes and insufficient. If you notice such points, please give me your advice or send me your pull request. It is welcome! Let's make useful knowledge together!
