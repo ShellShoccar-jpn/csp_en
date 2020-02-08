@@ -55,6 +55,7 @@ You can also see such elementary information on the web. If you are bothered or 
   * [The Open Group Base Specifications Issue 7, 2018 edition IEEE Std 1003.1](https://pubs.opengroup.org/onlinepubs/9699919799/)
 * Online Man-pages for Unix OSes ([see the below](#online-man-pages-for-Unix-oses))
   * [FreeBSD Manual Pages](https://www.freebsd.org/cgi/man.cgi)
+    * Also available, other BSDs, some commercial Unix familes, some Linux distros.
   * [The Linux man-pages project](https://www.kernel.org/doc/man-pages/)
   * [Commanfs - IBM AIX 7.2](https://www.ibm.com/support/knowledgecenter/en/ssw_aix_72/navigation/commands.html)
   * [Oracle Solaris 11.4 Reference Manuals](https://docs.oracle.com/cd/E88353_01/)
@@ -82,3 +83,7 @@ The useful information for us, shellscript programmers, are probably syntax or c
 
 However, you may feel the explanations in the POSIX site is a little difficult to understand due to the stringent sentences. To help your understanding, the online man-pages by OS vendors may be convenient. For instance, if you can make sure that there are explanations about the same options or commands in both sites, it's most likely that the vendor's one is credible. It's even more certain if the vendor's page mentions about POSIX.
 
+
+## Disclaimer
+
+This document is not complete. It perhaps contain some mistakes and insufficient. If you notice such points, please give me your advice or send me your pull request. It is welcome! Let's make the useful knowledge together!
