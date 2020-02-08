@@ -9,7 +9,7 @@ This is the translation project for [Compatible ShellScripting](https://richlab.
 
 ## Shellscript Compatibility is Up To You
 
-Many programmers regard that shellscript is a single-use script language because there are many dialects among each Unix OS. But **THAT INTERPRETATION IS NOT TRUE!** The reason for it is that they don't know which phrases are dialects or not. The programmers use a lot of incompatible or vender-unique commands, options, syntax without knowing the information. After all, they haven't studied enough about shellscript.
+Many programmers regard that shellscript is a single-use script language because there are many dialects among each Unix OS. But **THAT INTERPRETATION IS NOT CORRECT!** The reason for it is that they don't know which phrases are dialects or not. The programmers use a lot of incompatible or vender-unique commands, options, syntax without knowing the information. After all, they haven't studied enough about shellscript.
 
 ## POSIX Fundamentalism
 
