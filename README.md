@@ -88,4 +88,4 @@ However, you may feel the explanations in the POSIX site is a little difficult t
 
 ## Disclaimer
 
-This document is not complete. It perhaps contains some mistakes and insufficient. If you notice such points, please give me your advice or send me your pull request. That's our pleasure. Let's make useful knowledge together!
+This document is not complete. It's probably insufficient yet and perhaps contains some mistakes. If you notice such points, please give me your advice or send me your pull request. That's our pleasure. Let's make useful knowledge together!
