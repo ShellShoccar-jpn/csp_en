@@ -17,7 +17,7 @@ Well, what should we do to make shellscript more compatible and sustainable? Wha
 
 1. Look over and comply [the POSIX specification](https://pubs.opengroup.org/onlinepubs/9699919799/)
 1. Only when the POSIX commands are not enough to solve your task, make two or more equivalent and redundant routines with non-POSIX commands. It helps your shellscript keep compatible and sustainable.
-1. If you want to build web application programs, use JavaScript on web browsers while complying with [the W3C recommendation](https://www.w3.org/TR/), but don't use JavaScript libraries, which is unknown whether it meets the recommendation or not. [The W3C recommendation](https://www.w3.org/TR/) is compatible and sustainable among web browsers, as well as the POSIX specifications.
+1. If you want to build web application programs, use JavaScript on web browsers while complying with [the W3C recommendation](https://www.w3.org/TR/), but don't use JavaScript libraries, which is unknown whether it meets the recommendation or not. [The W3C recommendation](https://www.w3.org/TR/) is also compatible and sustainable among web browsers, as well as the POSIX specifications.
 
 In this book, I'll mainly tell you a lot of helpful tips to achieve the first rule.
 
