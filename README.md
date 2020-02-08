@@ -4,6 +4,8 @@ This is the translation project for [Compatible ShellScripting](https://richlab.
 
 ![Compatible ShellScripting Cover](images/csp_5.png "Compatible ShellScripting Cover")
 
+**The translation is about 30% done.**
+
 
 # Preface
 
@@ -86,4 +88,4 @@ However, you may feel the explanations in the POSIX site is a little difficult t
 
 ## Disclaimer
 
-This document is not complete. It perhaps contains some mistakes and insufficient. If you notice such points, please give me your advice or send me your pull request. It is welcome! Let's make useful knowledge together!
+This document is not complete. It perhaps contains some mistakes and insufficient. If you notice such points, please give me your advice or send me your pull request. That's our pleasure. Let's make useful knowledge together!
