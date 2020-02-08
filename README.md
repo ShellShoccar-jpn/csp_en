@@ -9,7 +9,7 @@ This is the translation project for [Compatible ShellScripting](https://richlab.
 
 ## Shellscript Compatibility is Up To You
 
-Many programmers regard that shellscript is a single-use script language because there are many dialects among each Unix OS. But **THAT INTERPRETATION IS NOT CORRECT!** The reason for it is that they don't know which phrases are dialects or not. The programmers use a lot of incompatible or vender-unique commands, options, syntax without knowing the information. After all, they haven't studied enough about shellscript.
+Many programmers regard that shellscript is a single-use script language because there are many dialects among each Unix OS. But **THAT INTERPRETATION IS NOT CORRECT!** The reason for it is that they don't know which phrases are dialects or not. The programmers use a lot of incompatible or vendor-unique commands, options, syntax without knowing the information. After all, they haven't studied enough about shellscript.
 
 ## POSIX Fundamentalism
 
@@ -17,7 +17,7 @@ Well, what should we do to make shellscript more compatible and sustainable? Wha
 
 1. Look over and comply [the POSIX specification](https://pubs.opengroup.org/onlinepubs/9699919799/)
 1. Only when the POSIX commands are not enough to solve your task, make two or more equivalent and redundant routines with non-POSIX commands. It helps your shellscript keep compatible and sustainable.
-1. If you want to build web application programs, Use JavaScript on web browsers while complying with [the W3C recommendation](https://www.w3.org/TR/), but don't use JavaScript libraries, which is unknown whether it meets the recommendation or not. [The W3C recommendation](https://www.w3.org/TR/) is as compatible and sustainable as the POSIX specifications.
+1. If you want to build web application programs, use JavaScript on web browsers while complying with [the W3C recommendation](https://www.w3.org/TR/), but don't use JavaScript libraries, which is unknown whether it meets the recommendation or not. [The W3C recommendation](https://www.w3.org/TR/) is compatible and sustainable among web browsers, as well as the POSIX specifications.
 
 In this book, I'll mainly tell you a lot of helpful tips to achieve the first rule.
 
