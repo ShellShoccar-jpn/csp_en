@@ -1,4 +1,4 @@
-# Knowledge to Make Shell scripts More Compatible
+# Knowledge to Make Shell Scripts More Compatible
 
 This is the translation project for [Compatible ShellScripting](https://richlab.org/coterie/csp.html) written in Japanese.
 
@@ -9,7 +9,7 @@ This is the translation project for [Compatible ShellScripting](https://richlab.
 
 # Preface
 
-## Shell script Compatibility is Up To You
+## Shell Script Compatibility is Up To You
 
 Many programmers regard that shell script is a single-use script language because there are many dialects among each Unix OS. But **THAT INTERPRETATION IS NOT CORRECT!** The reason for it is that they don't know which phrases are dialects or not. The programmers use a lot of incompatible or vendor-unique commands, options, syntax without knowing the information. After all, they haven't studied enough about shell script.
 
@@ -39,7 +39,7 @@ First of all, you should be ready to open this web page always when you make a s
 
 However, the contents in this document may not be enough for you to make a decent shell script. When you feel so, see also other documents.
 
-### This is Not a Textbook of Shell script
+### This is Not a Textbook of Shell Script
 
 This document isn't for the shell script beginners, doesn't contain fundamentals such as shell-syntax, available commands, tutorials. So, I recommend that you should get such a book and make a shell script while reading it if you don't know about UNIX or shell script.
 
