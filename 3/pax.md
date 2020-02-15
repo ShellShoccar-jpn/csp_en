@@ -6,7 +6,7 @@ Thus, strictly speaking, you should use the "pax" command for archiving. Of cour
 
 ## But Not So Popular
 
-However, it's not confident to say that "pax" is popular. Some Linux distributions like "Debian," "Ubuntu," and so on don't install it on initial status. So, you should make sure that there is pax or tar on your computer and choose one of them with a shellscript like this:
+However, it's not confident to say that "pax" is popular. Some Linux distributions like "Debian," "Ubuntu," and so on don't install it on initial status. So, you should make sure that there is pax or tar on your computer and choose one of them with a shell script like this:
 
 ### Dealing with Tar Archive with the Care of Compatibility
 

@@ -21,4 +21,4 @@ sys 0.00
 $ 
 ```
 
-As I illustrated above, don't forget to reset the locale to "C" if you don't initialize about it at the top of your shellscript.
+As I illustrated above, don't forget to reset the locale to "C" if you don't initialize about it at the top of your shell script.

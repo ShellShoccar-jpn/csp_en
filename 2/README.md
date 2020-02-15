@@ -2,11 +2,11 @@
 
 Have you ever had such an experience like this?
 
-> You wrote a regular expression pattern string, and it worked on a certain OS and command successfully. However, the string didn't work on another OS or command when you exported the shellscript containing the string. After all, you got confused by not knowing available metacharacters well.
+> You wrote a regular expression pattern string, and it worked on a certain OS and command successfully. However, the string didn't work on another OS or command when you exported the shell script containing the string. After all, you got confused by not knowing available metacharacters well.
 
 The available metacharacters of regular expression (RE) are different depending on OSes or commands. There are many metacharacter sets on RE. For example, the sets depending on commands, such as sed, grep, AWK. Also, depending on the OS families, like System-V, BSD, GNU. You have to figure out the difference among them.
 
-Don't worry. It's not so difficult because the metacharacter sets which you have to learn are only three for compatible shellscripts. The sets are almighty for not only shellscript but also all languages and libraries.
+Don't worry. It's not so difficult because the metacharacter sets which you have to learn are only three for compatible shell scripts. The sets are almighty for not only shell script but also all languages and libraries.
 
 ## Contents
 

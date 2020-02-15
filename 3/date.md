@@ -9,7 +9,7 @@ Note that the available macro sequences for the format are written in the last p
 
 ## To do the Mutual Transformation
 
-Unfortunately, the original "date" doesn't support the mutual transformation between the usual time and the UNIX time.[1] So, we made the command ["utconv"](https://github.com/ShellShoccar-jpn/misc-tools/blob/master/utconv) to do it. Of course, it is in POSIX compliant shellscript.
+Unfortunately, the original "date" doesn't support the mutual transformation between the usual time and the UNIX time.[1] So, we made the command ["utconv"](https://github.com/ShellShoccar-jpn/misc-tools/blob/master/utconv) to do it. Of course, it is in POSIX compliant shell script.
 
 ### Example
 

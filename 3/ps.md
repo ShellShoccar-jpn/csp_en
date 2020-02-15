@@ -50,7 +50,7 @@ On Linux, "init" is the only process whose PPID is 0. On the other hand, there a
 
 Unfortunately, ps command on Cygwin is incompatible with POSIX as of November 2019. It doesn't support either "-A" or "-o" option. I suppose that the cause is that Cygwin works on Windows, which has a different process management system.
 
-I think it's a proper policy that you don't support Cygwin because of non-POSIX OS. But, you, of course, also support it. If you want, you should make sure that your shellscript is on Cygwin with "uname" command before executing the ps command.
+I think it's a proper policy that you don't support Cygwin because of non-POSIX OS. But, you, of course, also support it. If you want, you should make sure that your shell script is on Cygwin with "uname" command before executing the ps command.
 
 Here is an example.
 
