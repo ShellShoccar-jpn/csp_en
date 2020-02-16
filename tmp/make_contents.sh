@@ -24,11 +24,13 @@ sed 's/-.md$/README.md/'                                              |
 while IFS= read -r file; do                                         # #
   export file                                                       # #
   case "$file" in                                                   # #
-    *README.md) cat "./$file"                                       | #
+    *README.md) echo                                                # #
+                cat "./$file"                                       | #
                 grep '^# '                                          | #
                 head -n 1                                           | #
-                sed 's/^# Chapter [0-9]\{1,\}. //'                  | #
-                awk '{printf("1. [%s](%s)\n",$0,ENVIRON["file"]);}'   #
+                sed 's/^# //'                                       | #
+                awk '{printf("## [%s](%s)\n",$0,ENVIRON["file"]);}'   #
+                echo                                                  #
                 continue                                              #
                 ;;                                                    #
   esac                                                                #
@@ -39,14 +41,14 @@ while IFS= read -r file; do                                         # #
            id=tolower(ttl);                                         # #
            gsub(/ /,"-",id); gsub(/[^a-z0-9_-]/,"",id);             # #
            if (n==1) {                                              # #
-             printf("   1. %s\n", ttl);                             # #
+             printf("1. %s\n", ttl);                                # #
            } else   {                                               # #
-             printf("   1. [%s](%s#%s)\n",ttl,ENVIRON["file"],id);  # #
+             printf("1. [%s](%s#%s)\n",ttl,ENVIRON["file"],id);     # #
            }                                                        # #
           }                                                         # #
     /^## /{ttl=substr($0,4);                                        # #
            gsub(/ /,"-",id); gsub(/[^a-z0-9_-]/,"",id);             # #
-           printf("      1. [%s](%s#%s)\n",ttl,ENVIRON["file"],id); # #
+           printf("   1. [%s](%s#%s)\n",ttl,ENVIRON["file"],id);    # #
           }                                                         # #
   '                                                                   #
 done
