@@ -47,6 +47,7 @@ while IFS= read -r file; do                                         # #
            }                                                        # #
           }                                                         # #
     /^## /{ttl=substr($0,4);                                        # #
+           id=tolower(ttl);                                         # #
            gsub(/ /,"-",id); gsub(/[^a-z0-9_-]/,"",id);             # #
            printf("   1. [%s](%s#%s)\n",ttl,ENVIRON["file"],id);    # #
           }                                                         # #

@@ -9,7 +9,7 @@ The sections with no link aren't translated yet.
 1. "base64" Command
 1. "bc" Command
 1. ["date" Command](3/date.md#date-command)
-   1. [To do the Mutual Transformation](3/date.md#date-command)
+   1. [To do the Mutual Transformation](3/date.md#to-do-the-mutual-transformation)
 1. "du" Command
 1. "echo" Command
 1. "env" Command
@@ -25,21 +25,21 @@ The sections with no link aren't translated yet.
 1. "nl" Command
 1. "od" Command
 1. ["pax" Command](3/pax.md#pax-command)
-   1. [But Not So Popular](3/pax.md#pax-command)
+   1. [But Not So Popular](3/pax.md#but-not-so-popular)
 1. "printf" Command
 1. ["ps" Command](3/ps.md#ps-command)
-   1. [Use "-A" Option Instead of "-x"](3/ps.md#ps-command)
-   1. [Should Not Use "-l" Option](3/ps.md#ps-command)
-   1. [Always Use "-o" Option to Define Format Clearly](3/ps.md#ps-command)
-   1. [Sup.1 PPID Number](3/ps.md#ps-command)
-   1. [Sup.2 ps Command on Cygwin](3/ps.md#ps-command)
+   1. [Use "-A" Option Instead of "-x"](3/ps.md#use--a-option-instead-of--x)
+   1. [Should Not Use "-l" Option](3/ps.md#should-not-use--l-option)
+   1. [Always Use "-o" Option to Define Format Clearly](3/ps.md#always-use--o-option-to-define-format-clearly)
+   1. [Sup.1 PPID Number](3/ps.md#sup1-ppid-number)
+   1. [Sup.2 ps Command on Cygwin](3/ps.md#sup2-ps-command-on-cygwin)
 1. "pwd" Command
 1. "readlink" Command
 1. ["sed" Command](3/sed.md#sed-command)
-   1. [Behavior When Given Text Data Doesn't Terminate with LF](3/sed.md#sed-command)
-   1. [Available Metacharacters in Regular Expression](3/sed.md#sed-command)
-   1. ["-" Does Not Always Mean the STDIN Symbol](3/sed.md#sed-command)
-   1. [Locale](3/sed.md#sed-command)
+   1. [Behavior When Given Text Data Doesn't Terminate with LF](3/sed.md#behavior-when-given-text-data-doesnt-terminate-with-lf)
+   1. [Available Metacharacters in Regular Expression](3/sed.md#available-metacharacters-in-regular-expression)
+   1. ["-" Does Not Always Mean the STDIN Symbol](3/sed.md#--does-not-always-mean-the-stdin-symbol)
+   1. [Locale](3/sed.md#locale)
 1. "sleep" Command
 1. "sort" Command
 1. "tac" Command
@@ -47,13 +47,13 @@ The sections with no link aren't translated yet.
 1. ["tar" Command](3/tar.md#tar-command)
 1. "test" (`[`) Command
 1. ["time" Command](3/time.md#time-command)
-   1. [How to Use It Safely](3/time.md#time-command)
+   1. [How to Use It Safely](3/time.md#how-to-use-it-safely)
 1. ["tr" Command](3/tr.md#tr-command)
-   1. [In Case of Having Two Pairs of Brackets Arguments](3/tr.md#tr-command)
-   1. [In Case of Having Only One Pair](3/tr.md#tr-command)
+   1. [In Case of Having Two Pairs of Brackets Arguments](3/tr.md#in-case-of-having-two-pairs-of-brackets-arguments)
+   1. [In Case of Having Only One Pair](3/tr.md#in-case-of-having-only-one-pair)
 1. "trap" Command
 1. "uuencode" And "uudecode" Commands
 1. "which" Command
 1. "xargs" Command
 1. ["zcat" Command](3/zcat.md#zcat-command)
-   1. [Important : In Case of Dealing with Small Files](3/zcat.md#zcat-command)
+   1. [Important : In Case of Dealing with Small Files](3/zcat.md#important--in-case-of-dealing-with-small-files)
