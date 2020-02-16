@@ -86,10 +86,10 @@ The useful information for us, shell script programmers, are probably syntax or 
 However, you may feel the explanations in the POSIX site is a little difficult to understand due to the stringent sentences. To help your understanding, the online man-pages by OS vendors may be convenient. For instance, if you can make sure that there are explanations about the same options or commands in both sites, it's most likely that the vendor's one is credible. It's even more certain if the vendor's page mentions about POSIX.
 
 
-## Contents
+# Contents
 
 See [this page](CONTENTS.md).
 
-## Disclaimer
+# Disclaimer
 
 This document is not complete. It's probably insufficient yet and perhaps contains some mistakes. If you notice such points, please give me your advice or send me your pull request. That's our pleasure. Let's make useful knowledge together!
