@@ -1,4 +1,4 @@
-# "$(...)" operator
+# "`$(`...`)`" Operator
 
 I recommend you to use this operator instead of the back quotation operator "\`...\`" because we can use the former with simple usage. However, you have to be careful a little about this. That is because some versions of Bash shells wrongly work for this operator.
 

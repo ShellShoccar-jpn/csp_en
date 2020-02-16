@@ -1,0 +1,1 @@
+# "PIPESTATUS", "pipestatus" Variable

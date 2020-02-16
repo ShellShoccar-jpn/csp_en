@@ -40,7 +40,7 @@ See [the above section](#can-we-use-binsh).
 
 ### 2) "`set -u`"
 
-"set" command sets the following arguments to the shell as options. And, "-u" is the option to abort the shell script when the script tries to read a variable having no value. It is useful for finding out misspelled variables. However, there are some points to be aware of the option. See ["`$*`/`$@`" variable section](-2440.md) and ["reading a undefined variable" section](variables.md#reading-a-undefined-variable).
+"set" command sets the following arguments to the shell as options. And, "-u" is the option to abort the shell script when the script tries to read a variable having no value. It is useful for finding out misspelled variables. However, there are some points to be aware of the option. See ["`$*`/`$@`" variables section](-2440_doller_asterisk_and_atmark.md) and ["reading a undefined variable" section](shell_variables.md#reading-a-undefined-variable).
 
 ### 3) "`umask 0022`"
 
