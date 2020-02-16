@@ -1,1 +1,59 @@
 # Chapter 3. The Compatible Commands And Usages
+
+The sections with no link aren't translated yet.
+
+## Contents
+
+1. "`[`" (test) Command
+1. AWK Command
+1. "base64" Command
+1. "bc" Command
+1. ["date" Command](3/date.md#date-command)
+   1. [To do the Mutual Transformation](3/date.md#date-command)
+1. "du" Command
+1. "echo" Command
+1. "env" Command
+1. "exec" Command
+1. "fold" Command
+1. "grep" Command
+1. "head" Command
+1. "iconv" Command
+1. "ifconfig" Command
+1. "kill" Command
+1. "ls" Command
+1. "mktemp" Command
+1. "nl" Command
+1. "od" Command
+1. ["pax" Command](3/pax.md#pax-command)
+   1. [But Not So Popular](3/pax.md#pax-command)
+1. "printf" Command
+1. ["ps" Command](3/ps.md#ps-command)
+   1. [Use "-A" Option Instead of "-x"](3/ps.md#ps-command)
+   1. [Should Not Use "-l" Option](3/ps.md#ps-command)
+   1. [Always Use "-o" Option to Define Format Clearly](3/ps.md#ps-command)
+   1. [Sup.1 PPID Number](3/ps.md#ps-command)
+   1. [Sup.2 ps Command on Cygwin](3/ps.md#ps-command)
+1. "pwd" Command
+1. "readlink" Command
+1. ["sed" Command](3/sed.md#sed-command)
+   1. [Behavior When Given Text Data Doesn't Terminate with LF](3/sed.md#sed-command)
+   1. [Available Metacharacters in Regular Expression](3/sed.md#sed-command)
+   1. ["-" Does Not Always Mean the STDIN Symbol](3/sed.md#sed-command)
+   1. [Locale](3/sed.md#sed-command)
+1. "sleep" Command
+1. "sort" Command
+1. "tac" Command
+1. "tail" Command
+1. ["tar" Command](3/tar.md#tar-command)
+1. "test" (`[`) Command
+1. ["time" Command](3/time.md#time-command)
+   1. [How to Use It Safely](3/time.md#time-command)
+1. ["tr" Command](3/tr.md#tr-command)
+   1. [In Case of Having Two Pairs of Brackets Arguments](3/tr.md#tr-command)
+   1. [In Case of Having Only One Pair](3/tr.md#tr-command)
+1. "trap" Command
+1. "uuencode" And "uudecode" Commands
+1. "which" Command
+1. "xargs" Command
+1. ["zcat" Command](3/zcat.md#zcat-command)
+   1. [Important : In Case of Dealing with Small Files](3/zcat.md#zcat-command)

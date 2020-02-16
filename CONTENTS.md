@@ -1,5 +1,8 @@
 # Contents
 
+Chapter 2 is done translating. Now translating chap. 1 and 3. The sections with no link aren't translated yet.
+
+
 ## [Chapter 1. The Compatible Shell Syntax](1/README.md)
 
 1. ["`#!`" -- "First of First" of Your Shell Script](1/-2321_shebang.md#----first-of-first-of-your-shell-script)
