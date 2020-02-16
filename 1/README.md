@@ -16,7 +16,7 @@ The sections with no link aren't translated yet.
 1. "/dev/urandom" File
 1. "`[:`...`:]`" (POSIX Character Class)
 1. "`[^`...`]`" (Pattern Matching Notation for Shell)
-1. "`\``...`\``" (backquotes) Operator
+1. "`````...`````" (backquotes) Operator
 1. "case" Construct
 1. "if" Construct
 1. "local" Modifier
