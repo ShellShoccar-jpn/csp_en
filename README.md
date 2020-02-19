@@ -92,4 +92,4 @@ See [this page](CONTENTS.md).
 
 # Disclaimer
 
-This document is not complete. It's probably insufficient yet and perhaps contains some mistakes. If you notice such points, please give me your advice or send me your pull request. That's our pleasure. Let's make useful knowledge together!
+This document is not complete. It's probably insufficient still and perhaps contains some mistakes. If you notice such points, please give me your advice or send me your pull request. That's our pleasure. Let's make useful knowledge together!
