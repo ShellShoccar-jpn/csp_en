@@ -33,7 +33,9 @@ The sections with no link aren't translated yet.
    1. [Always Use "-o" Option to Define Format Clearly](ps.md#always-use--o-option-to-define-format-clearly)
    1. [Sup.1 PPID Number](ps.md#sup1-ppid-number)
    1. [Sup.2 ps Command on Cygwin](ps.md#sup2-ps-command-on-cygwin)
-1. "pwd" Command
+1. ["pwd" Command](pwd.md#pwd-command)
+   1. [POSIX Incompliant Implementaions](pwd.md#posix-incompliant-implementaions)
+   1. [Resolution](pwd.md#resolution)
 1. "readlink" Command
 1. ["sed" Command](sed.md#sed-command)
    1. [Behavior When Given Text Data Doesn't Terminate with LF](sed.md#behavior-when-given-text-data-doesnt-terminate-with-lf)

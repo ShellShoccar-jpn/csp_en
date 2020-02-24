@@ -61,32 +61,33 @@ while IFS= read -r file; do                                          #
   export file                                                        #
   case "$file" in                                                    #
     *README.md) case $n in 1) :;; *) echo;; esac                     #
-                cat "./$file"                                      | #
-                grep '^# '                                         | #
-                head -n 1                                          | #
-                sed 's/^# //'                                      | #
-                awk '{printf("## [%s](%s)\n",$0,ENVIRON["file"]);}'  #
+                cat "./$file"                                     |  #
+                grep '^# '                                        |  #
+                head -n 1                                         |  #
+                sed 's/^# //'                                     |  #
+                awk '{s=ENVIRON["file"]; sub(/\/[^\/]+$/,"",s);   #  #
+                      printf("## [%s](%s)\n",$0,s);            }'    #
                 echo                                                 #
                 continue                                             #
                 ;;                                                   #
   esac                                                               #
   l=$(grep '^' "./$file" | wc -l | tr -cd '0-9')                     #
-  cat "./$file"                                                    | #
-  awk -v l=$l '                                                    # #
-    /^# / {ttl=substr($0,3);                                       # #
-           id=tolower(ttl);                                        # #
-           gsub(/ /,"-",id); gsub(/[^a-z0-9_-]/,"",id);            # #
-           if (l==1) {                                             # #
-             printf("1. %s\n", ttl);                               # #
-           } else   {                                              # #
-             printf("1. [%s](%s#%s)\n",ttl,ENVIRON["file"],id);    # #
-           }                                                       # #
-          }                                                        # #
-    /^## /{ttl=substr($0,4);                                       # #
-           id=tolower(ttl);                                        # #
-           gsub(/ /,"-",id); gsub(/[^a-z0-9_-]/,"",id);            # #
-           printf("   1. [%s](%s#%s)\n",ttl,ENVIRON["file"],id);   # #
-          }                                                        # #
+  cat "./$file"                                                  |   #
+  awk -v l=$l '                                                  #   #
+    /^# / {ttl=substr($0,3);                                     #   #
+           id=tolower(ttl);                                      #   #
+           gsub(/ /,"-",id); gsub(/[^a-z0-9_-]/,"",id);          #   #
+           if (l==1) {                                           #   #
+             printf("1. %s\n", ttl);                             #   #
+           } else   {                                            #   #
+             printf("1. [%s](%s#%s)\n",ttl,ENVIRON["file"],id);  #   #
+           }                                                     #   #
+          }                                                      #   #
+    /^## /{ttl=substr($0,4);                                     #   #
+           id=tolower(ttl);                                      #   #
+           gsub(/ /,"-",id); gsub(/[^a-z0-9_-]/,"",id);          #   #
+           printf("   1. [%s](%s#%s)\n",ttl,ENVIRON["file"],id); #   #
+          }                                                      #   #
   '                                                                  #
 done                                                                 >> $Tmp/new
 # --- 5) Copy the footer sections ------------------------------------

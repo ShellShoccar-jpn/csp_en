@@ -3,7 +3,7 @@
 Chapter 2 is done translating. Now translating chap. 1 and 3. The sections with no link aren't translated yet.
 
 
-## [Chapter 1. The Compatible Shell Syntax](1/README.md)
+## [Chapter 1. The Compatible Shell Syntax](1)
 
 1. ["`#!`" -- "First of First" of Your Shell Script](1/-2321_shebang.md#----first-of-first-of-your-shell-script)
    1. [Can I Use "`#!/bin/sh`"?](1/-2321_shebang.md#can-i-use-binsh)
@@ -31,7 +31,7 @@ Chapter 2 is done translating. Now translating chap. 1 and 3. The sections with 
 1. Shell Variables
 1. Textdata Without LF-terminator in Last Line
 
-## [Chapter 2. The Compatible Regular Expression](2/README.md)
+## [Chapter 2. The Compatible Regular Expression](2)
 
 1. [Just 3 Metacharacter Sets You Have to Learn](2/00_3_metachar_set.md#just-3-metacharacter-sets-you-have-to-learn)
    1. [Which Set Does Each Command Support Respectively?](2/00_3_metachar_set.md#which-set-does-each-command-support-respectively)
@@ -50,7 +50,7 @@ Chapter 2 is done translating. Now translating chap. 1 and 3. The sections with 
 1. [Notes](2/21_notes.md#notes)
    1. [`|`: OR Operator](2/21_notes.md#-or-operator)
 
-## [Chapter 3. The Compatible Commands And Usages](3/README.md)
+## [Chapter 3. The Compatible Commands And Usages](3)
 
 1. "`[`" (test) Command
 1. AWK Command
@@ -81,7 +81,9 @@ Chapter 2 is done translating. Now translating chap. 1 and 3. The sections with 
    1. [Always Use "-o" Option to Define Format Clearly](3/ps.md#always-use--o-option-to-define-format-clearly)
    1. [Sup.1 PPID Number](3/ps.md#sup1-ppid-number)
    1. [Sup.2 ps Command on Cygwin](3/ps.md#sup2-ps-command-on-cygwin)
-1. "pwd" Command
+1. ["pwd" Command](3/pwd.md#pwd-command)
+   1. [POSIX Incompliant Implementaions](3/pwd.md#posix-incompliant-implementaions)
+   1. [Resolution](3/pwd.md#resolution)
 1. "readlink" Command
 1. ["sed" Command](3/sed.md#sed-command)
    1. [Behavior When Given Text Data Doesn't Terminate with LF](3/sed.md#behavior-when-given-text-data-doesnt-terminate-with-lf)
