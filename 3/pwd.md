@@ -27,7 +27,7 @@ You may suppose that all we have to do is use the option "-L" or "-P" clearly no
 
 ## Solution
 
-We suggest two solutions. One is that you make your shell script tolerant, both LP and PP.
+We suggest two solutions. One is that you make your shell script tolerant of both LP and PP.
 
 The other is that you replace the pwd command with the following phrase.
 
