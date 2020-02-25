@@ -33,4 +33,4 @@ The other is that you replace the pwd command with the following phrase.
 
 > `pwd -P 2>/dev/null || pwd`
 
-In case that your pwd supports "-P," the first pwd returns PP. If not, the second one returns PP after the first one silently exits with an error. But you may worry whether the second one inevitably returns PP or not. The pwd commands which don't support the option is too old. Such an old one always returns PP. We have investigated that. Don't worry.
+In case that your pwd supports "-P," the first pwd returns PP. If not, the second one returns PP after the first one silently exits with an error. But you may worry whether the second one inevitably returns PP or not. The pwd commands which don't support the option is too old. Such an old one always returns PP. We have investigated that, and we are confident. Don't worry.
