@@ -1,6 +1,6 @@
 # "pwd" Command
 
-You know, this command displays the path where you are working now, it's called "Current Working Directory (CWD). There are two ways to express the path when you are in a symbolic linked directory. One is to use the name of the symbolic link, called "Logical Path (LP)." And the other is to use the actual directory name, which the symbolic-link means, called "Physical Path (PP)."
+You know, this command displays the path where you are working now, it's called "Current Working Directory (CWD). There are two ways to express the path when you are in a symbolic linked directory. One is "Logical Path (LP)," which expresses the path with the name of the symbolic link. And the other is "Physical Path (PP)," which expresses the path with the actual directory name the symbolic link links.
 
 ## POSIX Incompliant Implementaions
 
