@@ -4,7 +4,7 @@ You know, this command displays the path where you are working now, it's called 
 
 ## POSIX Incompliant Implementaions
 
-However, it depends on actual pwd commands whether they display LP or PP by default even though POSIX says pwd should display LP by default. For instance, the pwd in FreeBSD 12.1 displays PP by default. Moreover, the its manual insists that this behavior is to comply with POSIX 2001 edition. Of course, that is wrong.
+However, it depends on actual pwd commands whether they display LP or PP by default even though POSIX says pwd should display LP by default. For instance, the pwd in FreeBSD 12.1 displays PP by default. Moreover, its manual insists that this behavior is to comply with POSIX 2001 edition. Of course, that is wrong.
 
 ### Most Linux Distros Have Both LP And PP Versions
 
