@@ -16,7 +16,7 @@ Otherwise, we have to execute the getconf command in advance on a shell script, 
 
 These are the reasons why we say yes.
 
-## What Should I Write at The Top of Shell Scripts?
+## What Should I Write at the Top of Shell Scripts?
 
 It is very important for shell scripts that want high compatibility to behave equally no matter what status of the OS on which the script is deployed has. To make such a shell script, we recommend that you should always write the following code at the top of your shell script.
 
@@ -50,7 +50,7 @@ See [the above section](#can-we-use-binsh).
 
 The environment variable "LC_ALL" is to define the locale, which most commands refer the value to decide their behavior. And, "C" is the default locale, which all OSes in all region support, it means the most compatible locale. So, it would also be better if you initialize the setting with this variable.
 
-### 5) Two "type" Commands And "PATH" Variable
+### 5) Two "type" Commands and "PATH" Variable
 
 "PATH" is one of the most important environment variables. If you don't initialize this before executing a command, you can't expect which one of commands having the same name but in different paths would execute. The last line of the three is to make shell refer to the POSIX-compliant paths preferentially. And, the former two lines are to make sure that the commands required by the last line exist in the environment.
 

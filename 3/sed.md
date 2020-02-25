@@ -2,7 +2,7 @@
 
 This command has some points to be careful, too.
 
-## Behavior When Given Text Data Doesn't Terminate with LF
+## Behavior when Given Text Data Doesn't Terminate with LF
 
 Try this one-liner "`printf 'Hello,\nworld!' | sed 's/H/h/'`" on your environment. The reaction might be one of the following three.
 

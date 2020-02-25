@@ -7,7 +7,7 @@ This is one of the commands which has a lot of vendor-unique functions because t
 
 Note that the available macro sequences for the format are written in the last paragraph of "Conversion Specifications" on [the POSIX man page of "date."](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/date.html) You should make sure that.
 
-## To do the Mutual Transformation
+## To Do the Mutual Transformation
 
 Unfortunately, the original "date" doesn't support the mutual transformation between the usual time and the UNIX time.[1] So, we made the command ["utconv"](https://github.com/ShellShoccar-jpn/misc-tools/blob/master/utconv) to do it. Of course, it is in POSIX compliant shell script.
 

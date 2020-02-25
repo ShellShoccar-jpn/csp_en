@@ -1,1 +1,1 @@
-# "`$*`" And "`$@`" Variables
+# "`$*`" and "`$@`" Variables

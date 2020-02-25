@@ -1,1 +1,1 @@
-# "PIPESTATUS", "pipestatus" Variable
+# "PIPESTATUS" or "pipestatus" Variable

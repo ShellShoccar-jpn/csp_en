@@ -19,7 +19,7 @@ The cause is that Bash ver.3 regards the ")" operator for the case construction 
 
 If you want to use the case construction in this operator, you had better use the "if" construction instead, or you can [use the back quotation operator "\`...\`" carefully.](-60.md)
 
-## Put $$ in Double Quotation in This Operator
+## Put `$$` in Double Quotation in This Operator
 
 "$$" is one of the built-in shell variables, which convert into its own process ID, but there are some circumstances it doesn't work. It also happens on Bash version 4. Try the phrase "`echo $(echo $$'')`" on it if Bash 3 or 4 is available on your computer. Then, you can see the reaction like this:
 

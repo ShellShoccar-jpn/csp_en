@@ -6,7 +6,7 @@ You know, this command displays the path where you are working now, it's called 
 
 However, it depends on actual pwd commands whether they display LP or PP by default even though POSIX says pwd should display LP by default. For instance, the pwd in FreeBSD 12.1 displays PP by default. Moreover, its manual insists that this behavior is to comply with POSIX 2001 edition. Of course, that is wrong.
 
-### Most Linux Distros Have Both LP And PP Versions
+### Most Linux Distros Have Both LP and PP Versions
 
 To our annoyance, on Linux, the built-in pwd of bash displays LP with no option while the pwd of the coreutils (version 8.28) displays PP. You can make sure of the difference easily by the following.
 
@@ -25,7 +25,7 @@ $
 
 You may suppose that all we have to do is use the option "-L" or "-P" clearly not to depend on the default behavior. But unfortunately, some implementations don't support the options.
 
-## Solution
+## Solutions
 
 We suggest two solutions. One is that you make your shell script tolerant of both LP and PP.
 
