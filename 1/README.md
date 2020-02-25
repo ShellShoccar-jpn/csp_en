@@ -6,11 +6,11 @@ The sections with no link aren't translated yet.
 
 1. ["`#!`" -- "First of First" of Your Shell Script](-2321_shebang.md#----first-of-first-of-your-shell-script)
    1. [Can I Use "`#!/bin/sh`"?](-2321_shebang.md#can-i-use-binsh)
-   1. [What Should I Write at The Top of Shell Scripts?](-2321_shebang.md#what-should-i-write-at-the-top-of-shell-scripts)
+   1. [What Should I Write at the Top of Shell Scripts?](-2321_shebang.md#what-should-i-write-at-the-top-of-shell-scripts)
 1. ["`$(`...`)`" Operator](-2428_dollar_parenthes.md#-operator)
    1. [Should Not Use the "case" Construction in This Operator](-2428_dollar_parenthes.md#should-not-use-the-case-construction-in-this-operator)
-   1. [Put $$ in Double Quotation in This Operator](-2428_dollar_parenthes.md#put--in-double-quotation-in-this-operator)
-1. "`$*`" And "`$@`" Variables
+   1. [Put `$$` in Double Quotation in This Operator](-2428_dollar_parenthes.md#put--in-double-quotation-in-this-operator)
+1. "`$*`" and "`$@`" Variables
 1. "/dev/random" File
 1. "/dev/std{in,out,err}" Files
 1. "/dev/urandom" File
@@ -21,7 +21,7 @@ The sections with no link aren't translated yet.
 1. "if" Construct
 1. "local" Modifier
 1. Locale
-1. "PIPESTATUS", "pipestatus" Variable
+1. "PIPESTATUS" or "pipestatus" Variable
 1. POSIX Character Class
 1. Random Numbers
 1. Regular Expression

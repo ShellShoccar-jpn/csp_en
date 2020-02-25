@@ -9,7 +9,7 @@ The sections with no link aren't translated yet.
 1. "base64" Command
 1. "bc" Command
 1. ["date" Command](date.md#date-command)
-   1. [To do the Mutual Transformation](date.md#to-do-the-mutual-transformation)
+   1. [To Do the Mutual Transformation](date.md#to-do-the-mutual-transformation)
 1. "du" Command
 1. "echo" Command
 1. "env" Command
@@ -35,10 +35,10 @@ The sections with no link aren't translated yet.
    1. [Sup.2 ps Command on Cygwin](ps.md#sup2-ps-command-on-cygwin)
 1. ["pwd" Command](pwd.md#pwd-command)
    1. [POSIX Incompliant Implementaions](pwd.md#posix-incompliant-implementaions)
-   1. [Solution](pwd.md#solution)
+   1. [Solutions](pwd.md#solutions)
 1. "readlink" Command
 1. ["sed" Command](sed.md#sed-command)
-   1. [Behavior When Given Text Data Doesn't Terminate with LF](sed.md#behavior-when-given-text-data-doesnt-terminate-with-lf)
+   1. [Behavior when Given Text Data Doesn't Terminate with LF](sed.md#behavior-when-given-text-data-doesnt-terminate-with-lf)
    1. [Available Metacharacters in Regular Expression](sed.md#available-metacharacters-in-regular-expression)
    1. ["-" Does Not Always Mean the STDIN Symbol](sed.md#--does-not-always-mean-the-stdin-symbol)
    1. [Locale](sed.md#locale)
@@ -54,7 +54,7 @@ The sections with no link aren't translated yet.
    1. [In Case of Having Two Pairs of Brackets Arguments](tr.md#in-case-of-having-two-pairs-of-brackets-arguments)
    1. [In Case of Having Only One Pair](tr.md#in-case-of-having-only-one-pair)
 1. "trap" Command
-1. "uuencode" And "uudecode" Commands
+1. "uuencode" and "uudecode" Commands
 1. "which" Command
 1. "xargs" Command
 1. ["zcat" Command](zcat.md#zcat-command)

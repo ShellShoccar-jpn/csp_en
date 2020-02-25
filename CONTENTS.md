@@ -7,11 +7,11 @@ Chapter 2 is done translating. Now translating chap. 1 and 3. The sections with 
 
 1. ["`#!`" -- "First of First" of Your Shell Script](1/-2321_shebang.md#----first-of-first-of-your-shell-script)
    1. [Can I Use "`#!/bin/sh`"?](1/-2321_shebang.md#can-i-use-binsh)
-   1. [What Should I Write at The Top of Shell Scripts?](1/-2321_shebang.md#what-should-i-write-at-the-top-of-shell-scripts)
+   1. [What Should I Write at the Top of Shell Scripts?](1/-2321_shebang.md#what-should-i-write-at-the-top-of-shell-scripts)
 1. ["`$(`...`)`" Operator](1/-2428_dollar_parenthes.md#-operator)
    1. [Should Not Use the "case" Construction in This Operator](1/-2428_dollar_parenthes.md#should-not-use-the-case-construction-in-this-operator)
-   1. [Put $$ in Double Quotation in This Operator](1/-2428_dollar_parenthes.md#put--in-double-quotation-in-this-operator)
-1. "`$*`" And "`$@`" Variables
+   1. [Put `$$` in Double Quotation in This Operator](1/-2428_dollar_parenthes.md#put--in-double-quotation-in-this-operator)
+1. "`$*`" and "`$@`" Variables
 1. "/dev/random" File
 1. "/dev/std{in,out,err}" Files
 1. "/dev/urandom" File
@@ -22,7 +22,7 @@ Chapter 2 is done translating. Now translating chap. 1 and 3. The sections with 
 1. "if" Construct
 1. "local" Modifier
 1. Locale
-1. "PIPESTATUS", "pipestatus" Variable
+1. "PIPESTATUS" or "pipestatus" Variable
 1. POSIX Character Class
 1. Random Numbers
 1. Regular Expression
@@ -57,7 +57,7 @@ Chapter 2 is done translating. Now translating chap. 1 and 3. The sections with 
 1. "base64" Command
 1. "bc" Command
 1. ["date" Command](3/date.md#date-command)
-   1. [To do the Mutual Transformation](3/date.md#to-do-the-mutual-transformation)
+   1. [To Do the Mutual Transformation](3/date.md#to-do-the-mutual-transformation)
 1. "du" Command
 1. "echo" Command
 1. "env" Command
@@ -83,10 +83,10 @@ Chapter 2 is done translating. Now translating chap. 1 and 3. The sections with 
    1. [Sup.2 ps Command on Cygwin](3/ps.md#sup2-ps-command-on-cygwin)
 1. ["pwd" Command](3/pwd.md#pwd-command)
    1. [POSIX Incompliant Implementaions](3/pwd.md#posix-incompliant-implementaions)
-   1. [Solution](3/pwd.md#solution)
+   1. [Solutions](3/pwd.md#solutions)
 1. "readlink" Command
 1. ["sed" Command](3/sed.md#sed-command)
-   1. [Behavior When Given Text Data Doesn't Terminate with LF](3/sed.md#behavior-when-given-text-data-doesnt-terminate-with-lf)
+   1. [Behavior when Given Text Data Doesn't Terminate with LF](3/sed.md#behavior-when-given-text-data-doesnt-terminate-with-lf)
    1. [Available Metacharacters in Regular Expression](3/sed.md#available-metacharacters-in-regular-expression)
    1. ["-" Does Not Always Mean the STDIN Symbol](3/sed.md#--does-not-always-mean-the-stdin-symbol)
    1. [Locale](3/sed.md#locale)
@@ -102,7 +102,7 @@ Chapter 2 is done translating. Now translating chap. 1 and 3. The sections with 
    1. [In Case of Having Two Pairs of Brackets Arguments](3/tr.md#in-case-of-having-two-pairs-of-brackets-arguments)
    1. [In Case of Having Only One Pair](3/tr.md#in-case-of-having-only-one-pair)
 1. "trap" Command
-1. "uuencode" And "uudecode" Commands
+1. "uuencode" and "uudecode" Commands
 1. "which" Command
 1. "xargs" Command
 1. ["zcat" Command](3/zcat.md#zcat-command)
