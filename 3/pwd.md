@@ -25,9 +25,9 @@ $
 
 You may suppose that all we have to do is use the option "-L" or "-P" clearly not to depend on the default behavior. But unfortunately, some implementations don't support the options.
 
-## Resolution
+## Solution
 
-We suggest two resolutions. One is that you make your shell script tolerant, whether LP or PP is given.
+We suggest two solutions. One is that you make your shell script tolerant, both LP and PP.
 
 The other is that you replace the pwd command with the following phrase.
 

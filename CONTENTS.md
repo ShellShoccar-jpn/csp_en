@@ -83,7 +83,7 @@ Chapter 2 is done translating. Now translating chap. 1 and 3. The sections with 
    1. [Sup.2 ps Command on Cygwin](3/ps.md#sup2-ps-command-on-cygwin)
 1. ["pwd" Command](3/pwd.md#pwd-command)
    1. [POSIX Incompliant Implementaions](3/pwd.md#posix-incompliant-implementaions)
-   1. [Resolution](3/pwd.md#resolution)
+   1. [Solution](3/pwd.md#solution)
 1. "readlink" Command
 1. ["sed" Command](3/sed.md#sed-command)
    1. [Behavior When Given Text Data Doesn't Terminate with LF](3/sed.md#behavior-when-given-text-data-doesnt-terminate-with-lf)
