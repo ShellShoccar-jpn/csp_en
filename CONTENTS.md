@@ -59,7 +59,10 @@ Chapter 2 is done translating. Now translating chap. 1 and 3. The sections with 
 1. ["date" Command](3/date.md#date-command)
    1. [To Do the Mutual Transformation](3/date.md#to-do-the-mutual-transformation)
 1. "du" Command
-1. "echo" Command
+1. ["echo" Command](3/echo.md#echo-command)
+   1. [Every Implementation Supports Different Options](3/echo.md#every-implementation-supports-different-options)
+   1. [Some Implementations Interpret "`\`" Without the "`-e`" Option](3/echo.md#some-implementations-interpret--without-the--e-option)
+   1. [Solution](3/echo.md#solution)
 1. "env" Command
 1. "exec" Command
 1. "fold" Command

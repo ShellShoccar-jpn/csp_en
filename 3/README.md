@@ -11,7 +11,10 @@ The sections with no link aren't translated yet.
 1. ["date" Command](date.md#date-command)
    1. [To Do the Mutual Transformation](date.md#to-do-the-mutual-transformation)
 1. "du" Command
-1. "echo" Command
+1. ["echo" Command](echo.md#echo-command)
+   1. [Every Implementation Supports Different Options](echo.md#every-implementation-supports-different-options)
+   1. [Some Implementations Interpret "`\`" Without the "`-e`" Option](echo.md#some-implementations-interpret--without-the--e-option)
+   1. [Solution](echo.md#solution)
 1. "env" Command
 1. "exec" Command
 1. "fold" Command
