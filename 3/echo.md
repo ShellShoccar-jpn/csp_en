@@ -46,15 +46,15 @@ To make us annoyed, some of the echo implementations interpret the backslash "`\
   * AIX's (7.2) /bin/sh (ksh) built-in and external
   * dash (some distros of Linux's /bin/sh) built-in
   * HP-UX's (11i v3) /bin/sh built-in and external
-  * OpenBSD's (6.5) external
+  * OpenBSD's (6.5) /bin/sh (pdksh) built-in
   * Solaris' (11) /bin/sh built-in and external
   * macOS's (10.13) external
   * zsh built-in
 * Don't
   * bash (most distros of Linux's /bin/sh) built-in
-  * FreeBSD' (11.2) /bin/sh built-in and external
-  * NetBSD's (7.0) /bin/sh built-in and external
-  * OpenBSD's (6.5) /bin/sh built-in
+  * FreeBSD' (11.2) /bin/sh (ash) built-in and external
+  * NetBSD's (7.0) /bin/sh (ash) built-in and external
+  * OpenBSD's (6.5) external
   * macOS's (10.13) /bin/sh (bash 3.2) built-in
   * most distros of Linux's external (GNU echo)
 
