@@ -11,20 +11,19 @@ We explain the reason for it below.
 
 ## Every Implementation Supports Different Options
 
-Here is the report about available options for echo command on various implementations.
+Here is the report we investigated. It's about available options for echo command on various implementations.
 
-* Support no option
-  * POSIX
+* Support no option (POSIX compliant)
   * AIX's (7.2) /bin/sh (ksh) built-in and external
   * HP-UX's (11i v3) /bin/sh built-in and external
   * Solaris' (11) /bin/sh built-in and external
   * macOS's (10.13) /bin/sh (bash 3.2) built-in
 * Support only "`-n`"
+  * dash (some distros of Linux's /bin/sh) built-in
   * FreeBSD's (11.2) external
   * NetBSD's (7.0) external
   * OpenBSD's (6.5) external
   * macOS's (10.13) external
-  * dash (some distros of Linux's /bin/sh) built-in
 * Support "`-n`" and "`-e`"
   * FreeBSD's (11.2) /bin/sh (ash) built-in
   * NetBSD's (7.0) /bin/sh (ash) built-in
@@ -41,7 +40,23 @@ When these echo commands are given unsupported options, they simply display the 
 
 ## Some Implementations Interpret "`\`" Without the "`-e`" Option
 
-To make us annoyed, some of the echo implementations interpret the backslash "`\`" as the escape sequence symbol without the "`-e`" option.
+To make us annoyed, some of the echo implementations interpret the backslash "`\`" as the escape sequence symbol without the "`-e`" option. Here is also the report we investigated, which is about the default behavior of the backslash "`\`" interpretation.
+
+* Interpret "`\`" Without "`-e`" (POSIX compliant)
+  * AIX's (7.2) /bin/sh (ksh) built-in and external
+  * dash (some distros of Linux's /bin/sh) built-in
+  * HP-UX's (11i v3) /bin/sh built-in and external
+  * OpenBSD's (6.5) external
+  * Solaris' (11) /bin/sh built-in and external
+  * macOS's (10.13) external
+  * zsh built-in
+* Don't
+  * bash (most distros of Linux's /bin/sh) built-in
+  * FreeBSD' (11.2) /bin/sh built-in and external
+  * NetBSD's (7.0) /bin/sh built-in and external
+  * OpenBSD's (6.5) /bin/sh built-in
+  * macOS's (10.13) /bin/sh (bash 3.2) built-in
+  * most distros of Linux's external (GNU echo)
 
 Although that causes incompatibility, [POSIX surprisingly allows the behavior!](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/echo.html#tag_20_37_10) The POSIX document says that all implementations should support the interpretation with no option.
 
@@ -49,7 +64,7 @@ Although that causes incompatibility, [POSIX surprisingly allows the behavior!](
 
 The case in which you may use this command is only the situation you certainly know that strings or variables contain neither the headed hyphen "`-`" nor backslashes "`\`." Otherwise, use printf command instead of echo.
 
-Here is an example, which displays the strings of all arguments have.
+Here is an example, which displays the strings all arguments have.
 
 ```sh
 #!/bin/sh
