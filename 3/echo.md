@@ -62,7 +62,7 @@ Although that causes incompatibility, [POSIX surprisingly allows the behavior!](
 
 ## Solution
 
-The case in which you may use this command is only the situation you certainly know that strings or variables contain neither the headed hyphen "`-`" nor backslashes "`\`." Otherwise, use printf command instead of echo.
+The case in which you may use this command is only the situation you certainly know that strings or variables contain neither the headed hyphen "`-`" nor backslashes "`\`." Otherwise, use [printf command](printf.md#printf-command) instead of echo.
 
 Here is an example, which displays the strings all arguments have.
 
