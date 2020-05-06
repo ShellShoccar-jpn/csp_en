@@ -26,10 +26,9 @@ It is very important for shell scripts that want high compatibility to behave eq
 set -u
 umask 0022
 export LC_ALL=C
-type command >/dev/null 2>&1 &&
-type getconf >/dev/null 2>&1 &&
-export PATH="$(command -p getconf PATH)${PATH+:}${PATH-}"
-export UNIX_STD=2003
+export PATH="$(command -p getconf PATH 2>/dev/null)${PATH+:}${PATH-}"
+case $PATH in :*) PATH=${PATH#?};; esac
+export UNIX_STD=2003  # to make HP-UX conform to POSIX
 ```
 
 I'll explain them one by one.
@@ -50,13 +49,17 @@ See [the above section](#can-we-use-binsh).
 
 The environment variable "LC_ALL" is to define the locale, which most commands refer the value to decide their behavior. And, "C" is the default locale, which all OSes in all region support, it means the most compatible locale. So, it would also be better if you initialize the setting with this variable.
 
-### 5) Two "type" Commands and "PATH" Variable
+### 5) "`PATH=...`"  (Redefinition of "PATH" Variable)
 
-"PATH" is one of the most important environment variables. If you don't initialize this before executing a command, you can't expect which one of commands having the same name but in different paths would execute. The last line of the three is to make shell refer to the POSIX-compliant paths preferentially. And, the former two lines are to make sure that the commands required by the last line exist in the environment.
+"PATH" is one of the most important environment variables. If you don't initialize this before executing a command, you can't expect which one of commands having the same name but in different paths would execute. The line is to make shell refer to the POSIX-compliant paths preferentially. If your host support neither "command" nor "`getconf PATH`", this redifinition are cancelled by the next line.
 
-Notably, these lines are significant for shell scripts, which likely to run on Solaris because the default paths on Solaris, such as "/bin," "/usr/bin," have many POSIX-incompliant commands. And, these three could overwrite the setting.
+Notably, this line are significant for shell scripts, which likely to run on Solaris because the default paths on Solaris, such as "/bin," "/usr/bin," have many POSIX-incompliant commands. And, this could overwrite the setting.
 
-### 6) "`export UNIX_STD=2003`"
+### 6) "`case $PATH ...`" (Validation of the Redefinition)
+
+If your host support neither "command" command nor "`getconf PATH`", the string of "PATH" variable starts from the charater ":" because "`$(command ...)`" in the previous line failed. To recover the original string of "PATH" in that case, the "case" construct validates the "PATH" variable and removes the delimiter ":" if invalid.
+
+### 7) "`export UNIX_STD=2003`"
 
 This environment variable is to make HP-UX compatible with POSIX. The commands in HP-UX behave compliantly with POSIX when this variable exists, and it has this value.
 
