@@ -9,7 +9,7 @@ This is the translation project for [Compatible ShellScripting](https://richlab.
 
 # Preface
 
-## Shell Script Compatibility is Up To You
+## Shell Script Compatibility is Up to You
 
 Many programmers regard that shell script is a single-use script language because there are many dialects among each Unix OS. But **THAT INTERPRETATION IS NOT CORRECT!** The reason for it is that they don't know which phrases are dialects or not. The programmers use a lot of incompatible or vendor-unique commands, options, syntax without knowing the information. After all, they haven't studied enough about shell script.
 
@@ -48,7 +48,7 @@ This document isn't for the shell script beginners, doesn't contain fundamentals
 You can also see such elementary information on the web. If you are bothered or hard to get the book, the following pages will help you.
 
 * Fundamentals
-  * [Shell Scripting Tutorial](https://www.shell script.sh/)
+  * [Shell Scripting Tutorial](https://www.shellscript.sh/)
   * [UNIX / LINUX Tutorial](https://www.tutorialspoint.com/unix/)
     * [Shell Scripting Tutorial](https://www.tutorialspoint.com/unix/shell_scripting.htm)
   * [Linux/Unix Tutorial for Beginners: Learn Online in 7 days](https://www.guru99.com/unix-linux-tutorial.html)
